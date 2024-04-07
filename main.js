@@ -31,26 +31,34 @@ function generatedComputerChoice(){
 
 function getresult() {
   if(userChoice === computerChoice){
-    result = "its a draw"
+    result = "its a draw";
+    textColor = "yellow"
   }
   if(userChoice === "Rock" && computerChoice==="Paper"){
-    result = "you lose!"
+    result = "you lose!";
+    textColor = "red"
   }
   if(userChoice === "Rock" && computerChoice==="Scissors"){
-    result = "you win!"
+    result = "you win!";
+    textColor = "green";
   }
   if(userChoice === "Paper" && computerChoice==="Rock"){
-    result = "you win!"
+    result = "you win!";
+    textColor = "green";
   }
   if(userChoice === "Paper" && computerChoice==="Scissors"){
-    result = "you lose!"
+    result = "you lose!";
+    textColor = "red";
   }
   if(userChoice === "Scissors" && computerChoice==="Rock"){
-    result = "you lose!"
+    result = "you lose!";
+    textColor = "red";
   }
   if(userChoice === "Scissors" && computerChoice==="Paper"){
-    result = "you win!"
+    result = "you win!";
+    textColor = "green";
   }
 
   resultDisplay.innerHTML = result;
+  resultDisplay.style.color = textColor; 
 }
